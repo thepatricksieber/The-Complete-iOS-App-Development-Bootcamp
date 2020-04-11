@@ -1,9 +1,22 @@
-//
-//  Enemy.swift
-//  ClassesDemo
-//
-//  Created by Patrick Sieber on 09.04.20.
-//  Copyright © 2020 Patrick Sieber. All rights reserved.
-//
 
-import Foundation
+class Enemy {
+    var health: Int
+    var attackStrength: Int
+    
+    init(health: Int, attackStrength: Int) {
+        self.health = health
+        self.attackStrength = attackStrength
+    }
+    
+    func takeDamage(amount: Int) {
+        health = health - amount
+    }
+    
+    func move() {
+        print("Move forwards.")
+    }
+    
+    func attack() {
+        print("Land a hit, does \(attackStrength) damage.")
+    }
+}

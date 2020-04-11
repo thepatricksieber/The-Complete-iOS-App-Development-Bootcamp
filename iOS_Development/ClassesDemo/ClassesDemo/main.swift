@@ -1,12 +1,8 @@
-//
-//  main.swift
-//  ClassesDemo
-//
-//  Created by Patrick Sieber on 09.04.20.
-//  Copyright © 2020 Patrick Sieber. All rights reserved.
-//
+let dragon = Dragon()
+dragon.attackStrength = 15
+dragon.talk(speech: "my name is dragon")
+dragon.move()
+dragon.attack()
 
-import Foundation
-
-print("Hello, World!")
+let skeleton = Enemy(health: 100, attackStrength: 10)
 
